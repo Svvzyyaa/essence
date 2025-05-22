@@ -234,20 +234,21 @@ main, h2, ul, blockquote, form {
 
   .logo-dropdown {
     position: relative;
-    text-align: center;
     display: inline-block;
+    text-align: center;
   }
 
   .logo-button {
     background: none;
     border: none;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8em;
-    color: black;
+    font: inherit;
+    color: inherit;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
+    margin: 0;
   }
 
   .logo-button: img {
@@ -264,6 +265,8 @@ main, h2, ul, blockquote, form {
     right: 0;
     z-index: 999;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: inherit;
+    font-size: 0.95em;
   }
 
   .dropdown-content a {
