@@ -38,232 +38,153 @@
       height: 50px;
     }
 
-    .menu-toggle {
-      display: none;
-      font-size: 2rem;
-      background: none;
-      border: none;
-      color: #111;
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--primary);
+      text-transform: uppercase;
+      font-size: 0.9em;
     }
 
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
-      }
+    .hero-full {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1500&q=80') no-repeat center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-      .menu-toggle {
-        display: block;
-        align-self: flex-end;
-        margin-bottom: 10px;
-      }
+    .hero-full h1 {
+      font-family: var(--font-heading);
+      font-size: 3.5em;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+      text-align: center;
+    }
 
-      nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        gap: 15px;
-      }
+    .section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
 
-      nav.show {
-        display: flex;
-      }
+    .section h2 {
+      text-align: center;
+      font-family: var(--font-heading);
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
 
-      nav a {
-        padding: 10px 0;
-      }
-  
-      nav a {
-        margin: 0 15px;
-        text-decoration: none;
-        font-weight: 500;
-        color: var(--primary);
-        text-transform: uppercase;
-        font-size: 0.9em;
-      }
- 
-      .hero-full {
-        height: 100vh;
-        background: url('https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1500&q=80') no-repeat center/cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
 
-      .hero-full h1 {
-        font-family: var(--font-heading);
-        font-size: 3.5em;
-        color: white;
-        text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
-        text-align: center;
-      }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
 
-      .section {
-        max-width: 1000px;
-        margin: 60px auto;
-        padding: 0 20px;
-      }
+    .card img {
+      width: 100%;
+      display: block;
+      height: 300px;
+      object-fit: cover;
+    }
 
-      .section h2 {
-        text-align: center;
-        font-family: var(--font-heading);
-        font-size: 2.5em;
-        margin-bottom: 30px;
-      }
+    .card:hover {
+      transform: scale(1.02);
+    }
 
-      .catalogo {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
-      }
+    .card h3 {
+      padding: 15px;
+      font-family: var(--font-heading);
+      font-size: 1.2em;
+    }
 
-      .card {
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        overflow: hidden;
-        transition: transform 0.3s;
-      }
-  
-      .card img {
-        width: 100%;
-        display: block;
-        height: 300px;
-        object-fit: cover;
-      }
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 40px auto;
+    }
 
-      .card:hover {
-        transform: scale(1.02);
-      }
+    form label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: 600;
+    }
 
-      .card h3 {
-        padding: 15px;
-        font-family: var(--font-heading);
-        font-size: 1.2em;
-      }
+    form select,
+    form input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-family: var(--font-body);
+    }
 
-      form {
-        background: white;
-        padding: 30px;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        max-width: 600px;
-        margin: 40px auto;
-      }
+    form .privacy {
+      font-size: 0.85em;
+      color: #555;
+      margin-top: 10px;
+    }
 
-      form label {
-        display: block;
-        margin: 15px 0 5px;
-        font-weight: 600;
-      }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #f4f4f4;
+      font-size: 0.9em;
+      color: #555;
+    }
 
-      form select,
-      form input[type="submit"] {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 15px;
-        border-radius: 6px;
-        border: 1px solid #ccc;
-        font-family: var(--font-body);
-      }
- 
-      form .privacy {
-        font-size: 0.85em;
-        color: #555;
-        margin-top: 10px;
-      }
+    #cookie-banner {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.85);
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 0.9em;
+    }
 
-      footer {
-        text-align: center;
-        padding: 40px 20px;
-        background-color: #f4f4f4;
-        font-size: 0.9em;
-        color: #555;
-      }
-
-      #cookie-banner {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background: rgba(0,0,0,0.85);
-        color: white;
-        padding: 15px;
-        text-align: center;
-        font-size: 0.9em;
-      }
-
-      #cookie-banner button {
-        margin-left: 20px;
-        padding: 8px 16px;
-        border: none;
-        background: var(--accent);
-        color: white;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-
-      @media (max-width: 768px) {
-        header {
-          flex-direction: column;
-          align-items: center;
-          gap: 15px;
-          padding: 15px;
-      }
-
-      nav {
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      .hero-full h1 {
-        font-size: 2em;
-        padding: 10px;
-      }
-
-      .catalogo {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-
-      .card {
-        width: 100%;
-      }
-      
-      .card img {
-        height: auto;
-        max.width: 100%;
-      }
-
-      form {
-        padding: 20px;
-      }
-
-      footer {
-        text-align: center;
-        padding: 20px;
-      }
+    #cookie-banner button {
+      margin-left: 20px;
+      padding: 8px 16px;
+      border: none;
+      background: var(--accent);
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <div id="cookie-banner" style="position:fixed;bottom:0;width:100%;background:#111;color:#fff;padding:15px;text-align:center;z-index:999;">
-    Utilizamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestra <a href="privacidad.html" style="color:#c9a64d;">política de cookies</a>.
-    <button onclick="document.getElementById('cookie-banner').style.display='none'" style="margin-left:15px;padding:8px 15px;background:#c9a64d;border:none;color:white;border-radius:5px;">Aceptar</button>
+  <div id="cookie-banner">
+    Utilizamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestra <a href="#" style="color: var(--accent); text-decoration: underline;">política de cookies</a>.
+    <button onclick="document.getElementById('cookie-banner').style.display='none'">Aceptar</button>
   </div>
 
   <header>
-  <img src="IMAGENES/logo.jpg" alt="Logo Essence">
-  <button class="menu-toggle" onclick="toggleMobileMenu()">☰</button>
-  <nav id="main-nav">
-    <a href="index.html">Inicio</a>
-    <a href="arabes.html">Árabes</a>
-    <a href="disenador.html">Diseñador</a>
-    <a href="nicho.html">Nicho</a>
-    <a href="resenas.html">Reseñas</a>
-    <a href="descubre.html">Descubre</a>
-  </nav>
+    <img src="IMAGENES/logo.jpg" alt="Logo Essence" style= "max-width: 100%;" "height: auto;">
+    <h1>ESSENCE</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="arabes.html">Árabes</a>
+      <a href="disenador.html">Diseñador</a>
+      <a href="nicho.html">Nicho</a>
+      <a href="resenas.html">Reseñas</a>
+      <a href="descubre.html">Descubre</a>
+    </nav>
   </header>
 
   <section class="hero-full">
@@ -316,12 +237,5 @@
     <p>Contáctanos: <a href="essence.company:contacto@gmail.com">contacto@essence.com</a> | WhatsApp: +51 917 924 023.</p>
     <p>&copy; 2025 Essence. Todos los derechos reservados.</p>
   </footer>
-
-<script>
-  function toggleMobileMenu() {
-    document.getElementById("main-nav").classList.toggle("show");
-   }
-</script>
-    
 </body>
 </html>
