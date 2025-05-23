@@ -166,6 +166,43 @@
       border-radius: 5px;
       cursor: pointer;
     }
+
+    .carrusel-circular {
+      margin: 40px auto;
+      position: relative;
+      width: 400px;
+      height: 400px;
+      perspective: 1000px;
+    }
+
+    .carrusel {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transform-style: preserve-3d;
+      animation: girar 20s infinite linear;
+    }
+
+    .carrusel img {
+      position: absolute;
+      width: 200px;
+      height: 120px;
+      left: 100px;
+      top: 140px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+      transition: transform 0.5s;
+    }
+
+    @keyframes girar {
+      from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(360deg);
+      }
+    }
   </style>
 </head>
 <body>
@@ -191,6 +228,16 @@
     <h1>Encuentra tu esencia perfecta</h1>
   </section>
 
+  <div class="carrusel-circular">
+    <div class="carrusel">
+      <img src="IMAGENES/" alt="1">
+      <img src="IMAGENES/" alt="2">
+      <img src="IMAGENES/" alt="3">
+      <img src="IMAGENES/" alt="4">
+      <img src="IMAGENES/" alt="5">
+      <img src="IMAGENES/" alt="6">
+    </div>
+  </div>
   <main>
     <h2>Nuestra Historia</h2>
     <p>En Essence, celebramos la conexión entre aroma y emoción. Desde nuestros inicios, hemos curado fragancias con carácter y estilo, ayudando a cada persona a descubrir su esencia única.</p>
@@ -237,5 +284,14 @@
     <p>Contáctanos: <a href="essence.company:contacto@gmail.com">contacto@essence.com</a> | WhatsApp: +51 917 924 023.</p>
     <p>&copy; 2025 Essence. Todos los derechos reservados.</p>
   </footer>
+ <script>
+  const imagenes = document.querySelectorAll('.carrusel img');
+  const total = imagenes.length;
+
+  imagenes.forEach((img, i) => {
+    const angulo = (360 / total) * i;
+    img.style.transform = `rotateY(${angulo}deg) translateZ(300px)`;
+  });
+</script>
 </body>
 </html>
