@@ -166,6 +166,54 @@
       border-radius: 5px;
       cursor: pointer;
     }
+    
+    .logo-dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    }
+
+    .logo-button {
+      background: none;
+      border: none;
+      font: inherit;
+      color: inherit;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .logo-button: img {
+      height: 60px;
+      margin-bottom: 5px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      font-family: inherit;
+      font-size: 0.95em;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 12px;
+      text-decoration: none;
+      color: #111;
+      border-bottom: 1px solid #eee;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f7f7f7;
   </style>
 </head>
 <body>
