@@ -241,5 +241,18 @@
     <p>Contáctanos: <a href="essence.company:contacto@gmail.com">contacto@essence.com</a> | WhatsApp: +51 917 924 023.</p>
     <p>&copy; 2025 Essence. Todos los derechos reservados.</p>
   </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu-opciones');
+      menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
+    document.addEventListener('click', function(e) {
+      const menu = document.getElementById('menu-opciones');
+      const button = document.querySelector('.logo-button');
+      if (!button.contains(e.target)) {
+        menu.style.display = 'none';
+    }
+  });
+</script>
 </body>
 </html>
