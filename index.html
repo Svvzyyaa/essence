@@ -38,22 +38,58 @@
       height: 50px;
     }
 
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 500;
-      color: var(--primary);
-      text-transform: uppercase;
-      font-size: 0.9em;
-    }
+    .menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #111;
+   }
 
-    .hero-full {
-      height: 100vh;
-      background: url('https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1500&q=80') no-repeat center/cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+   @media (max-width: 768px) {
+     header {
+       flex-direction: column;
+       align-items: flex-start;
+       padding: 20px;
+     }
+
+     .menu-toggle {
+       display: block;
+       align-self: flex-end;
+       margin-bottom: 10px;
+     }
+
+     nav {
+       display: none;
+       flex-direction: column;
+       width: 100%;
+       gap: 15px;
+     }
+
+     nav.show {
+       display: flex;
+     }
+
+     nav a {
+       padding: 10px 0;
+     }
+  
+     nav a {
+       margin: 0 15px;
+       text-decoration: none;
+       font-weight: 500;
+       color: var(--primary);
+       text-transform: uppercase;
+       font-size: 0.9em;
+     }
+
+     .hero-full {
+       height: 100vh;
+       background: url('https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1500&q=80') no-repeat center/cover;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
 
     .hero-full h1 {
       font-family: var(--font-heading);
@@ -218,13 +254,8 @@
   </div>
 
   <header>
-  <div class="essence-logo">
-    <a href="index.html">
-      <img src="imagenes/logo.png" alt="Logo Essence">
-    </a>
-    <h1 class="titulo">ESSENCE</h1>
-    <button class="menu-toggle" onclick="toggleMobileMenu()">☰</button>
-  </div>
+  <img src="IMAGENES/logo.jpg" alt="Logo Essence">
+  <button class="menu-toggle" onclick="toggleMobileMenu()">☰</button>
   <nav id="main-nav">
     <a href="index.html">Inicio</a>
     <a href="arabes.html">Árabes</a>
@@ -233,7 +264,7 @@
     <a href="resenas.html">Reseñas</a>
     <a href="descubre.html">Descubre</a>
   </nav>
-</header>
+  </header>
 
   <section class="hero-full">
     <h1>Encuentra tu esencia perfecta</h1>
@@ -286,20 +317,11 @@
     <p>&copy; 2025 Essence. Todos los derechos reservados.</p>
   </footer>
 
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('menu-opciones');
-      menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
-    }
-
-    document.addEventListener('click', function (e) {
-      const menu = document.getElementById('menu-opciones');
-      const button = document.querySelector('.logo-button');
-      if (!button.contains(e.target)) {
-        menu.style.display = 'none';
-      }
-    });
-  </script>
+<script>
+  function toggleMobileMenu() {
+    document.getElementById("main-nav").classList.toggle("show");
+   }
+</script>
     
 </body>
 </html>
