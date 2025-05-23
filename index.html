@@ -166,54 +166,6 @@
       border-radius: 5px;
       cursor: pointer;
     }
-    
-    .logo-dropdown {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    }
-
-    .logo-button {
-      background: none;
-      border: none;
-      font: inherit;
-      color: inherit;
-      cursor: pointer;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0;
-      margin: 0;
-    }
-
-    .logo-button: img {
-      height: 60px;
-      margin-bottom: 5px;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: white;
-      top: 100%;
-      left: 0;
-      right: 0;
-      z-index: 999;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      font-family: inherit;
-      font-size: 0.95em;
-    }
-
-    .dropdown-content a {
-      display: block;
-      padding: 12px;
-      text-decoration: none;
-      color: #111;
-      border-bottom: 1px solid #eee;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #f7f7f7;
   </style>
 </head>
 <body>
@@ -223,11 +175,8 @@
   </div>
 
   <header>
-    <div class="logo-dropdown">
-    <button onclick="toggleMenu()" class="logo-button">
-      <img src="IMAGENES/logo.jpg" alt="Logo Essence" style= "max-width: 100%;" "height: auto;">
-      <h1>ESSENCE</h1>
-    </button>
+    <img src="IMAGENES/logo.jpg" alt="Logo Essence" style= "max-width: 100%;" "height: auto;">
+    <h1>ESSENCE</h1>
     <nav>
       <a href="index.html">Inicio</a>
       <a href="arabes.html">Árabes</a>
@@ -236,7 +185,6 @@
       <a href="resenas.html">Reseñas</a>
       <a href="descubre.html">Descubre</a>
     </nav>
-    </div>   
   </header>
 
   <section class="hero-full">
@@ -289,18 +237,5 @@
     <p>Contáctanos: <a href="essence.company:contacto@gmail.com">contacto@essence.com</a> | WhatsApp: +51 917 924 023.</p>
     <p>&copy; 2025 Essence. Todos los derechos reservados.</p>
   </footer>
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('menu-opciones');
-      menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
-    }
-    document.addEventListener('click', function(e) {
-      const menu = document.getElementById('menu-opciones');
-      const button = document.querySelector('.logo-button');
-      if (!button.contains(e.target)) {
-        menu.style.display = 'none';
-    }
-  });
-</script>
 </body>
 </html>
