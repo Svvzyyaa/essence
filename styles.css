@@ -147,19 +147,19 @@ nav a {
   color: #555;
 }
 
-.form {
+form {
   background-color: #f7f7f7;
   padding: 20px;
   border-radius: 10px;
 }
 
-.form label {
+form label {
   font-weight: 600;
   display: block;
   margin-top: 15px;
 }
 
-.form select, form input[type="submit"] {
+form select, form input[type="submit"] {
   width: 100%;
   padding: 10px;
   margin-top: 8px;
@@ -168,7 +168,7 @@ nav a {
   font-size: 1em;
 }
 
-.form input[type="submit"] {
+form input[type="submit"] {
   background-color: var(--color-primary);
   color: white;
   font-weight: bold;
@@ -176,7 +176,7 @@ nav a {
   transition: background 0.3s ease;
 }
 
-.form input[type="submit"]:hover {
+form input[type="submit"]:hover {
   background-color: #333;
 }
 
@@ -450,3 +450,47 @@ nav a {
     width: calc(160px * 10);
   }
 }
+  .perfume-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;     
+    padding: 40px 20px;
+  }
+
+  .perfume-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .perfume-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  .perfume-card img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .perfume-card h3 {
+    font-family: var(--font-heading);
+    margin-bottom: 10px;
+    font-size: 1.4em;
+  }
+
+  .perfume-card p {
+    font-size: 0.95em;
+    color: #444;
+    line-height: 1.5;
+  }
