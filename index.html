@@ -291,6 +291,9 @@
   imagenes.forEach((img, i) => {
     const angulo = (360 / total) * i;
     img.style.transform = `rotateY(${angulo}deg) translateZ(300px)`;
+  document.getElementById("mobile-menu-toggle").addEventListener("click", function () {
+    const menu = document.getElementById("nav-menu");
+    menu.classList.toggle("active");     
   });
 </script>
 </body>
