@@ -239,16 +239,18 @@
     <h1>Encuentra tu esencia perfecta</h1>
   </section>
 
-  <div class="carrusel-circular">
-    <div class="carrusel">
-      <img src="IMAGENES/3.jpg" alt="1" style= "max-width: 20%;" "height: 60px;">
-      <img src="IMAGENES/4.jpg" alt="2" style= "max-width: 20%;" "height: 60px;">
-      <img src="IMAGENES/amberoud.jpg" alt="3" style= "max-width: 20%;" "height: 60px;">
-      <img src="IMAGENES/creed.jpg" alt="4" style= "max-width: 20%;" "height: 60px;">
-      <img src="IMAGENES/oudroyal2.jpg" alt="5" style= "max-width: 20%;" "height: 60px;">
-      <img src="IMAGENES/chanelno5.jpg" alt="6" style= "max-width: 20%;" "height: 60px;">
+  <div id="carousel" class="carousel">
+    <div class="slide active">
+      <img src="IMAGENES/3.jpg" alt="Imagen 1">
+    </div>
+    <div class="slide">
+      <img src="IMAGENES/4.jpg" alt="Imagen 2">
+    </div>
+    <div class="slide">
+      <img src="IMAGENES/creed.jpg" alt="Imagen 3">
     </div>
   </div>
+  
   <main>
     <h2>Nuestra Historia</h2>
     <p>En Essence, celebramos la conexión entre aroma y emoción. Desde nuestros inicios, hemos curado fragancias con carácter y estilo, ayudando a cada persona a descubrir su esencia única.</p>
@@ -306,16 +308,19 @@
     </div> 
   </footer>
  <script>
-  const imagenes = document.querySelectorAll('.carrusel img');
-  const total = imagenes.length;
+  let current = 0;
+  const slides = document.querySelectorAll('.slide');
 
-  imagenes.forEach((img, i) => {
-    const angulo = (360 / total) * i;
-    img.style.transform = `rotateY(${angulo}deg) translateZ(300px)`;
-  document.getElementById("mobile-menu-toggle").addEventListener("click", function () {
-    const menu = document.getElementById("nav-menu");
-    menu.classList.toggle("active");     
-  });
+  setInterval(() => {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }, 3000);
+
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('show');
+  }  
 </script>
 </body>
 </html>
