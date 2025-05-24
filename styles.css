@@ -302,8 +302,10 @@ main, h2, ul, blockquote, form {
   }
 
   .carrusel img {
-    width: 120px;
-    height: 80px;
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px;
     left: 65px;
     top: 85px;
   }
