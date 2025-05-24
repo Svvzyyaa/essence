@@ -402,19 +402,20 @@ main, h2, ul, blockquote, form {
 }
 
 .carrusel-wrapper {
+  perspective: 1000px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0;
   overflow-x: hidden;
 }
 
 .carrusel-circular {
   position: relative;
-  width: 400px;
-  height: 400px;
-  margin: 0 auto;
-  perspective: 1000px;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: girar 20s infinite linear;
 }
 
 .carrusel {
@@ -427,14 +428,11 @@ main, h2, ul, blockquote, form {
 
 .carrusel img {
   position: absolute;
-  width: 200px;
-  height: 120px;
-  left: 100px;
-  top: 140px;
+  width: 150px;
+  height: 100px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-  transition: transform 0.5s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
