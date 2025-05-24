@@ -220,13 +220,13 @@ main, h2, ul, blockquote, form {
   opacity: 0;
 }
 
-#nav-menu {
+.nav-menu {
   display: flex;
   gap: 20px;
 }
 
 @media (max-width: 768px) {
-  #nav-menu {
+  .nav-menu {
     display: none;
     flex-direction: column;
     background-color: white;
@@ -238,7 +238,7 @@ main, h2, ul, blockquote, form {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
 
-  #nav-menu.active {
+  .nav-menu.active {
     display: flex;
   }
 
