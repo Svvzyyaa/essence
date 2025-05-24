@@ -151,7 +151,8 @@
       position: relative;
       width: 400px;
       height: 400px;
-      perspective: 1000px; /* CORREGIDO */
+      perspective: 1000px;
+      margin: 0 auto;
     }
 
     .carrusel {
@@ -180,6 +181,20 @@
       }
       to {
         transform: rotateY(360deg);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .carrusel-circular {
+        width: 90vw;
+        height: 90vw;
+      }
+
+      .carrusel img {
+        width: 45vw;
+        height: 25vw;
+        left: calc(50% - 22.5vw); /* centra horizontalmente */
+        top: calc(50% - 12.5vw);  /* centra verticalmente */
       }
     }
 </style>  
@@ -215,11 +230,13 @@
     <h1>Encuentra tu esencia perfecta</h1>
   </section>
 
-  <div class="carrusel-circular">
-    <div class="carrusel">
-      <img src="IMAGENES/chanelno5.jpg" alt="Imagen 1" style="max-width: 40%; height: 60px;">
-      <img src="IMAGENES/musksultan.jpg" alt="Imagen 2" style="max-width: 40%; height: 60px;">
-      <img src="IMAGENES/creed.jpg" alt="Imagen 3" style="max-width: 40%; height: 60px;">
+  <div style="display: flex; justify-content: center; align-items: center; min-height: 100vh;">
+    <div class="carrusel-circular">
+      <div class="carrusel">
+        <img src="IMAGENES/chanelno5.jpg" alt="Imagen 1" style="max-width: 40%; height: 60px;">
+        <img src="IMAGENES/musksultan.jpg" alt="Imagen 2" style="max-width: 40%; height: 60px;">
+        <img src="IMAGENES/creed.jpg" alt="Imagen 3" style="max-width: 40%; height: 60px;">
+      </div>
     </div>
   </div>
   
