@@ -10,10 +10,10 @@
 }
 
 body {
-  margin: 0;
-  background-color: var(--color-light);
-  font-family: var(--font-body);
-  color: var(--color-text);
+ margin: 0;
+ background-color: var(--color-light);
+ font-family: var(--font-body);
+ color: var(--color-text);
 }
 
 header {
