@@ -152,7 +152,7 @@
       width: 100%;
       max-width: 400px;
       height: auto;
-      aspect-ratio: 1 / 1; /* Mantiene proporción cuadrada */
+      aspect-ratio: 1 / 1; 
       margin: 2rem auto;
       perspective: 1000px;
     }
@@ -189,8 +189,8 @@
       .carrusel img {
         width: 45vw;
         height: 25vw;
-        left: calc(50% - 22.5vw); /* centra horizontalmente */
-        top: calc(50% - 12.5vw);  /* centra verticalmente */
+        left: calc(50% - 22.5vw);
+        top: calc(50% - 12.5vw);  
       }
     }
 </style>  
@@ -239,16 +239,18 @@
   <h1>Encuentra tu esencia perfecta</h1>
 </section>
 
-<div style="display: flex; justify-content: center; align-items: center; min-height: 100vh;">
+<section class="carrusel-wrapper">
   <div class="carrusel-circular">
     <div class="carrusel">
+    <div style="display: flex; justify-content: center; align-items: center; min-height: 100vh;">
       <img src="IMAGENES/chanelno5.jpg" alt="Imagen 1" style="max-width: 40%; height: 60px;">
       <img src="IMAGENES/musksultan.jpg" alt="Imagen 2" style="max-width: 40%; height: 60px;">
       <img src="IMAGENES/creed.jpg" alt="Imagen 3" style="max-width: 40%; height: 60px;">
     </div>
+    </div>
   </div>
-</div>
-  
+</section>
+
 <main>
   <h2>Nuestra Historia</h2>
   <p>En Essenziale, celebramos la conexión entre aroma y emoción. Desde nuestros inicios, hemos curado fragancias con carácter y estilo, ayudando a cada persona a descubrir su esencia única.</p>
