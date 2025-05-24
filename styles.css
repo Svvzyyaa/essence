@@ -220,29 +220,38 @@ main, h2, ul, blockquote, form {
   opacity: 0;
 }
 
-.nav-menu {
-  display: flex;
-  gap: 20px;
+.mobile-header {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+}
+
+.mobile-menu a {
+  margin: 5px 0;
+  text-decoration: none;
+  color: black;
 }
 
 @media (max-width: 768px) {
-  .nav-menu {
+  .desktop-nav {
     display: none;
-    flex-direction: column;
-    background-color: white;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
 
-  .nav-menu.active {
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #mobileMenu.show {
     display: flex;
   }
+}
 
-  .logo {
-    cursor: pointer;
-  }  
-}   
+
