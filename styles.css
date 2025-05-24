@@ -94,7 +94,7 @@ nav a {
   gap: 30px;
 }
 
-.card {
+card {
   background: white;
   border: 1px solid #eee;
   padding: 10px;
@@ -102,16 +102,16 @@ nav a {
   text-align: center;
 }
 
-.card img {
+card img {
   max-width: 100%;
   border-radius: 4px;
 }
 
-.card:hover {
+card:hover {
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
-.card h3 {
+card h3 {
   margin-top: 15px;
   font-size: 1.1em;
   font-weight: 500;
