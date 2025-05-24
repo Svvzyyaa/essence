@@ -138,14 +138,6 @@
       color: #555;
       margin-top: 10px;
     }
-
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      background-color: #f4f4f4;
-      font-size: 0.9em;
-      color: #555;
-    }
 </style>  
 <body>
   <div class="cookie-banner" id="cookieBanner">
@@ -194,11 +186,11 @@
 
 <section class="carrusel-wrapper">
   <div class="carrusel-circular">
-    <div class="carrusel">
-    <div style="display: flex; justify-content: center; align-items: center; min-height: 100vh;">
       <img src="IMAGENES/chanelno5.jpg" alt="Imagen 1" style="max-width: 40%; height: 60px;">
-      <img src="IMAGENES/musksultan.jpg" alt="Imagen 2" style="max-width: 40%; height: 60px;">
-      <img src="IMAGENES/creed.jpg" alt="Imagen 3" style="max-width: 40%; height: 60px;">
+      <img src="IMAGENES/baccarat2.jpg" alt="Imagen 2" style="max-width: 40%; height: 60px;">
+      <img src="IMAGENES/blackopium2.jpg" alt="Imagen 3" style="max-width: 40%; height: 60px;">
+      <img src="IMAGENES/musksultan.jpg" alt="Imagen 4" style="max-width: 40%; height: 60px;">
+      <img src="IMAGENES/creed.jpg" alt="Imagen 5" style="max-width: 40%; height: 60px;">
     </div>
     </div>
   </div>
@@ -259,12 +251,11 @@
 </footer>
     
 <script>
-  const imagenes = document.querySelectorAll('.carrusel img');
+  const imagenes = document.querySelectorAll('.carrusel-circular img');
   const total = imagenes.length;
-
   imagenes.forEach((img, i) => {
     const angulo = (360 / total) * i;
-    img.style.transform = `rotateY(${angulo}deg) translateZ(300px)`;
+    img.style.transform = `rotateY(${angulo}deg) translateZ(150px)`;
   });
 </script> 
     
@@ -293,13 +284,6 @@
     }
   };
 </script> 
-
-<script>
-  function toggleMenu() {
-    const menu = document.getElementById("mobileMenu");
-    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-  }
-</script>    
     
 </body>
 </html>
