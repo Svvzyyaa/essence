@@ -146,53 +146,6 @@
       font-size: 0.9em;
       color: #555;
     }
-
-    .carrusel-circular {
-      position: relative;
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      aspect-ratio: 1 / 1; 
-      margin: 2rem auto;
-      perspective: 1000px;
-    }
-
-    @media (max-width: 768px) {
-      .carrusel-circular {
-        max-width: 300px;
-        margin: 1rem auto;
-      }
-
-      .carrusel img {
-        width: 150px;
-        height: 90px;
-       left: 75px;
-       top: 120px;
-     }
-    }
-  
-    @keyframes girar {
-      from {
-        transform: rotateY(0deg);
-      }
-      to {
-        transform: rotateY(360deg);
-      }
-    }
-
-    @media (max-width: 768px) {
-      .carrusel-circular {
-        width: 90vw;
-        height: 90vw;
-      }
-
-      .carrusel img {
-        width: 45vw;
-        height: 25vw;
-        left: calc(50% - 22.5vw);
-        top: calc(50% - 12.5vw);  
-      }
-    }
 </style>  
 <body>
   <div class="cookie-banner" id="cookieBanner">
