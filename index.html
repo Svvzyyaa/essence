@@ -296,31 +296,39 @@
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-logo">
-        <img src="IMAGENES/logo.jpg" alt="ESSENCE" />
+        <img src="logo.png" alt="Essence">
       </div>
-      <div class="footer-contact">
-        <p>Contáctanos: <a href="essence:contacto@gmail.com">contacto@essence.com</a></p>
-        <p>Whatsapp: <a href="https://wa.me/51917924023">+51 917 924 023</a></p>
-      </div>
-      <div class="footer-copy">
-        <p>#copy 2025 Essence. Todos los derechos reservados.</p>
-      </div>
-    </div> 
-  </footer>
+    <div class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="arabes.html">Árabes</a>
+      <a href="disenador.html">Diseñador</a>
+      <a href="resenas.html">Reseñas</a>
+    </div>
+    <div class="footer-contact">
+      <p>📧 essenziale:contacto@gmail.com</p>
+      <p>📱 WhatsApp: +51 917 924 023</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Essence. Todos los derechos reservados.</p>
+  </div>
+</footer>
+    
  <script>
-  let current = 0;
-  const slides = document.querySelectorAll('.slide');
-
-  setInterval(() => {
-    slides[current].classList.remove('active');
-    current = (current + 1) % slides.length;
-    slides[current].classList.add('active');
-  }, 3000);
-
-  function toggleMenu() {
-    const menu = document.getElementById('mobileMenu');
-    menu.classList.toggle('show');
-  }  
-</script>
+   let current = 0;
+   const slides = document.querySelectorAll('.slide');
+   setInterval(() => {
+     slides[current].classList.remove('active');
+     current = (current + 1) % slides.length;
+     slides[current].classList.add('active');
+   }, 3000);
+ </script> 
+    
+ <script>
+   function toggleMenu() {
+     const menu = document.getElementById('mobileMenu');
+     menu.classList.toggle('show');
+   }  
+ </script>
 </body>
 </html>
