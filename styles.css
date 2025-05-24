@@ -50,8 +50,9 @@ nav a:hover {
 
 .hero {
   width: 100%;
-  heigth: 90vh;
-  background: IMAGENES/logo.jpg
+  height: 90vh;
+  background: IMAGENES/logo2.jpg;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
