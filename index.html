@@ -39,6 +39,21 @@
       height: 50px;
     }
 
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: #111;
+    }  
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
     nav a {
       margin: 0 15px;
       text-decoration: none;
@@ -136,6 +151,7 @@
   
 <header>
   <span class="brand-name">ESSENZIALE</span>
+  <button class="menu-toggle" onclick="toggleMobileMenu()">☰</button>
   <nav class="desktop-menu">
     <a href="index.html">Inicio</a>
     <a href="arabes.html">Árabes</a>
@@ -144,6 +160,8 @@
     <a href="resenas.html">Reseñas</a>
     <a href="descubre.html">Descubre</a>
   </nav>
+</header>  
+  
 
   <nav class="mobile-header">
     <div class="hamburger" onclick="toggleMenu()">☰</div>
@@ -157,9 +175,9 @@
     </div>
   </nav>
   
-    <div class="hero-full">
-    <h1>Encuentra tu esencia perfecta</h1>
-    </div>
+    <section class="hero-full">
+      <h1>Encuentra tu esencia perfecta</h1>
+    </section>
 
   <nav class="carrusel-wrapper">
     <div class="carrusel-circular">
