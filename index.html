@@ -9,58 +9,58 @@
 </head> 
 <style>
   :root {
-      --font-heading: 'Playfair Display', serif;
-      --font-body: 'Inter', sans-serif;
-      --primary: #111;
-      --accent: #c49b66;
-      --bg: #fff9f4;
-    }
+     --font-heading: 'Playfair Display', serif;
+     --font-body: 'Inter', sans-serif;
+     --primary: #111;
+     --accent: #c49b66;
+     --bg: #fff9f4;
+  }
 
-    body {
-      margin: 0;
-      font-family: var(--font-body);
-      background-color: var(--bg);
-      color: var(--primary);
-    }
+  .body {
+    margin: 0;
+    font-family: var(--font-body);
+    background-color: var(--bg);
+    color: var(--primary);
+   }
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      background-color: white;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+   .header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 40px;
+     background-color: white;
+     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+   }
 
-    header img {
-      height: 50px;
-    }
+   .header img {
+     height: 50px;
+   }
 
-    .menu-toggle {
-      display: none;
-      font-size: 2rem;
-      background: none;
-      border: none;
-      color: #111;
-    }  
+   .menu-toggle {
+     display: none;
+     font-size: 2rem;
+     background: none;
+     border: none;
+     color: #111;
+   }  
 
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      flex-wrap: wrap;
-    }
+   .nav {
+     display: flex;
+     justify-content: center;
+     gap: 25px;
+     flex-wrap: wrap;
+   }
 
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 500;
-      color: var(--primary);
-      text-transform: uppercase;
-      font-size: 0.9em;
+   .nav a {
+     margin: 0 15px;
+     text-decoration: none;
+     font-weight: 500;
+     color: var(--primary);
+     text-transform: uppercase;
+     font-size: 0.9em;
     }
     
     .section {
@@ -137,7 +137,8 @@
       color: #555;
       margin-top: 10px;
     }
-</style>    
+</style>  
+  
 <body>
   <div class="cookie-banner" id="cookieBanner">
     <div class="cookie-content">
@@ -152,17 +153,16 @@
 <header>
   <span class="brand-name">ESSENZIALE</span>
   <button class="menu-toggle" onclick="toggleMobileMenu()">☰</button>
-  <nav class="desktop-menu">
-    <a href="index.html">Inicio</a>
-    <a href="arabes.html">Árabes</a>
-    <a href="disenador.html">Diseñador</a>
-    <a href="nicho.html">Nicho</a>
-    <a href="resenas.html">Reseñas</a>
-    <a href="descubre.html">Descubre</a>
-  </nav>
+    <nav class="desktop-menu">
+      <a href="index.html">Inicio</a>
+      <a href="arabes.html">Árabes</a>
+      <a href="disenador.html">Diseñador</a>
+      <a href="nicho.html">Nicho</a>
+      <a href="resenas.html">Reseñas</a>
+      <a href="descubre.html">Descubre</a>
+    </nav>
 </header>  
   
-
   <nav class="mobile-header">
     <div class="hamburger" onclick="toggleMenu()">☰</div>
     <div id="mobileMenu" class="mobile-menu">
@@ -175,72 +175,72 @@
     </div>
   </nav>
   
-    <section class="hero-full">
-      <h1>Encuentra tu esencia perfecta</h1>
-    </section>
+  <section class="hero-full">
+    <h1>Encuentra tu esencia perfecta</h1>
+  </section>
 
   <div class="carrusel">
-    <div class="slide-track">
-      <div class="slide"><img src="IMAGENES/chanelno5.jpg" alt="Imagen 1"></div>
-      <div class="slide"><img src="IMAGENES/oudroyal2.jpg" alt="Imagen 2"></div>
-      <div class="slide"><img src="IMAGENES/blackopium2.jpg" alt="Imagen 3"></div>
-      <div class="slide"><img src="IMAGENES/musksultan.jpg" alt="Imagen 4"></div>
-      <div class="slide"><img src="IMAGENES/creed.jpg" alt="Imagen 5"></div>
-    </div>
-  </div>
+     <div class="slide-track">
+       <div class="slide"><img src="IMAGENES/chanelno5.jpg" alt="Imagen 1"></div>
+       <div class="slide"><img src="IMAGENES/oudroyal2.jpg" alt="Imagen 2"></div>
+       <div class="slide"><img src="IMAGENES/blackopium2.jpg" alt="Imagen 3"></div>
+       <div class="slide"><img src="IMAGENES/musksultan.jpg" alt="Imagen 4"></div>
+       <div class="slide"><img src="IMAGENES/creed.jpg" alt="Imagen 5"></div>
+     </div>
+ </div>
 
-<main>
-  <h2>Nuestra Historia</h2>
-  <p>En Essenziale, celebramos la conexión entre aroma y emoción. Desde nuestros inicios, hemos curado fragancias con carácter y estilo, ayudando a cada persona a descubrir su esencia única.</p>
+ <main>
+   <h2>Nuestra Historia</h2>
+   <p>En Essenziale, celebramos la conexión entre aroma y emoción. Desde nuestros inicios, hemos curado fragancias con carácter y estilo, ayudando a cada persona a descubrir su esencia única.</p>
 
   <h2>¿Por qué elegirnos?</h2>
-  <div class="catalogo">
-    <div class="card">
-      <img src="IMAGENES/curaduria.jpg" alt="Curaduria">
-      <h3>Curaduría Exclusiva</h3>
-      <p>Seleccionamos solo las fragancias más destacadas del mundo árabe, diseñador y nicho.</p>
+    <div class="catalogo">
+      <div class="card">
+        <img src="IMAGENES/curaduria.jpg" alt="Curaduria">
+        <h3>Curaduría Exclusiva</h3>
+        <p>Seleccionamos solo las fragancias más destacadas del mundo árabe, diseñador y nicho.</p>
+      </div>
+     <div class="card">
+       <img src="IMAGENES/estilo.jpg" alt="Estilo">
+       <h3>Estilo Personal</h3>
+       <p>Encuentra perfumes alineados con tu identidad y ocasión especial.</p>
+     </div>
+     <div class="card">
+       <img src="IMAGENES/sensorial.jpg" alt="Experiencia">
+       <h3>Experiencia Sensorial</h3>
+       <p>Explora notas, familias olfativas y recomendaciones con una guía experta.</p>
+     </div>
     </div>
-  <div class="card">
-      <img src="IMAGENES/estilo.jpg" alt="Estilo">
-      <h3>Estilo Personal</h3>
-      <p>Encuentra perfumes alineados con tu identidad y ocasión especial.</p>
-    </div>
-  <div class="card">
-      <img src="IMAGENES/sensorial.jpg" alt="Experiencia">
-      <h3>Experiencia Sensorial</h3>
-      <p>Explora notas, familias olfativas y recomendaciones con una guía experta.</p>
-    </div>
-  </div>
 
   <h3>Una breve historia del perfume</h3>
-  <p>El uso del perfume se remonta a civilizaciones antiguas como Egipto, Mesopotamia y Roma. Desde rituales religiosos hasta símbolos de estatus, los perfumes han evolucionado hasta convertirse en una expresión personal de identidad y emoción.</p>
-  <div style="text-align: center; margin-top: 30px;">
-    <img src="IMAGENES/3.jpg" alt="Origen del Perfume" style="max-width: 40%; height: 60;">
-  </div>
+    <p>El uso del perfume se remonta a civilizaciones antiguas como Egipto, Mesopotamia y Roma. Desde rituales religiosos hasta símbolos de estatus, los perfumes han evolucionado hasta convertirse en una expresión personal de identidad y emoción.</p>
+    <div style="text-align: center; margin-top: 30px;">
+      <img src="IMAGENES/3.jpg" alt="Origen del Perfume" style="max-width: 40%; height: 60;">
+    </div>
 
 
   <h3>¿Por qué son importantes?</h3>
-  <p>El perfume puede influir en la percepción, despertar recuerdos y expresar quién eres. Elegir la fragancia adecuada puede generar una conexión emocional única contigo y con los demás.</p>
-  <div style="text-align: center; margin-top: 30px;">
-    <img src="IMAGENES/4.jpg" alt="Importancia del Perfume" style="max-width: 40%; height: 60;">
-  </div>
-</main>  
+    <p>El perfume puede influir en la percepción, despertar recuerdos y expresar quién eres. Elegir la fragancia adecuada puede generar una conexión emocional única contigo y con los demás.</p>
+    <div style="text-align: center; margin-top: 30px;">
+      <img src="IMAGENES/4.jpg" alt="Importancia del Perfume" style="max-width: 40%; height: 60;">
+    </div>
+ </main>  
   
 <footer class="footer">
    <div class="footer-content">
      <div class="footer-column">
        <h4>Essence</h4>
-       <p>Perfumes exclusivos y reseñas honestas.</p>
+         <p>Perfumes exclusivos y reseñas honestas.</p>
      </div>
-   <div class="footer-column">
-     <h4>Contacto</h4>
-     <p>WhatsApp: +51 917 924 023</p>
-     <p>Email: contacto@essence.com</p>
-   </div>
-  <div>
+     <div class="footer-column">
+       <h4>Contacto</h4>
+        <p>WhatsApp: +51 917 924 023</p>
+        <p>Email: contacto@essence.com</p>
+     </div>
+    </div>
     <div class="footer-bottom">
       © 2025 Essence. Todos los derechos reservados.
-  </div>
+    </div>
 </footer>
     
 <script>
