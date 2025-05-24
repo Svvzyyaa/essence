@@ -428,30 +428,30 @@ main, h2, ul, blockquote, form {
 
 .carrusel {
   overflow: hidden;
-  padding: 20px 0;
+  padding: 40px 0;
   background-color: #fff9f4;
+  margin-bottom: 40px;
 }
 
 .slide-track {
   display: flex;
-  width: calc(250px * 10);
+  width: fit-content;
   animation: scroll 30s linear infinite;
 }
 
 .slide {
-  height: 150px;
-  width: 250px;
+  min-width: 200px;
+  margin: 0 10px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 0 10px;
+  justify-content: center;
 }
 
 .slide img {
   width: 100%;
+  max-width: 200px;
   height: auto;
   border-radius: 10px;
-  object-fit: cover;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
