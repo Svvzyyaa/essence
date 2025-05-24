@@ -373,12 +373,19 @@ main, h2, ul, blockquote, form {
   }
 }
 
+.carrusel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  overflow-x: hidden;
+}
+
 .carrusel-circular {
   position: relative;
-  width: 100%;
-  max-width: 400px;
+  width: 400px;
   height: 400px;
-  margin: 0 auto; /* Centrar carrusel */
+  margin: 0 auto;
   perspective: 1000px;
 }
 
@@ -400,6 +407,24 @@ main, h2, ul, blockquote, form {
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
   transition: transform 0.5s;
+}
+
+@media (max-width: 768px) {
+  .carrusel-circular {
+    width: 280px;
+    height: 280px;
+  }
+
+  .carrusel img {
+    width: 140px;
+    height: 90px;
+    left: 70px;
+    top: 95px;
+  }
+
+  .carrusel-wrapper {
+    padding: 1rem 0;
+  }
 }
 
 .logo-container img {
