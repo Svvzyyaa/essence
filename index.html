@@ -146,25 +146,34 @@
       color: #555;
     }
 
-    #cookie-banner {
+    .cookie-banner {
       position: fixed;
       bottom: 0;
       width: 100%;
-      background: rgba(0,0,0,0.85);
+      background: rgba(30, 30, 30, 0.9);
       color: white;
-      padding: 15px;
-      text-align: center;
-      font-size: 0.9em;
+      padding: 10px 20px;
+      font-size: 14px;
+      z-index: 999;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    #cookie-banner button {
-      margin-left: 20px;
-      padding: 8px 16px;
-      border: none;
-      background: var(--accent);
+    .cookie-banner a {
+      color: #ffd700;
+      text-decoration: underline;
+    }  
+
+    .cookie-banner button {
+      background-color: #c49b66;
       color: white;
-      border-radius: 5px;
+      border: none;
+      padding: 8px 16px;
+      margin-left: 10px;
       cursor: pointer;
+      border-radius: 4px;
     }
 
     .carrusel-circular {
@@ -280,9 +289,19 @@
     </div>
     </section>
     
-  <footer>
-    <p>Contáctanos: <a href="essence.company:contacto@gmail.com">contacto@essence.com</a> | WhatsApp: +51 917 924 023.</p>
-    <p>&copy; 2025 Essence. Todos los derechos reservados.</p>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="IMAGENES/logo.jpg" alt="ESSENCE" />
+      </div>
+      <div class="footer-contact">
+        <p>Contáctanos: <a href="essence:contacto@gmail.com">contacto@essence.com</a></p>
+        <p>Whatsapp: <a href="https://wa.me/51917924023">+51 917 924 023</a></p>
+      </div>
+      <div class="footer-copy">
+        <p>#copy 2025 Essence. Todos los derechos reservados.</p>
+      </div>
+    </div> 
   </footer>
  <script>
   const imagenes = document.querySelectorAll('.carrusel img');
