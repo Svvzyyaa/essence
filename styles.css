@@ -236,6 +236,17 @@ main, h2, ul, blockquote, form {
   opacity: 0;
 }
 
+.desktop-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.desktop-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
 .mobile-header {
   display: none;
 }
@@ -253,6 +264,7 @@ main, h2, ul, blockquote, form {
   margin: 5px 0;
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 
 .mobile-menu.show {
@@ -274,8 +286,9 @@ main, h2, ul, blockquote, form {
   #mobileMenu.show {
     display: flex;
   }
+}
 
-  @media (min-width: 769px) {
+@media (min-width: 769px) {
   .desktop-header {
     display: flex !important;
   }
