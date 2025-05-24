@@ -199,7 +199,7 @@ nav a {
 }
 
 @media (max-width: 768px) {
-  .header {
+  header {
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
@@ -211,24 +211,28 @@ nav a {
     margin-bottom: 10px;
   }
 
-  .nav {
+  nav {
     display: none;
     flex-direction: column;
     width: 100%;
     gap: 15px;
   }
 
-  .nav.show {
+  nav.show {
     display: flex;
   }
 
-  .nav a {
+  nav a {
     padding: 10px 0;
   }
 
   .hero-full h1 {
     font-size: 2em;
     padding: 10px;
+  }
+
+  .card {
+    width: 90%;
   }
 }
 
