@@ -283,14 +283,35 @@ main, h2, ul, blockquote, form {
     padding: 10px;
   }
 
-  #mobileMenu.show {
-    display: flex;
+  .carrusel-wrapper {
+    padding: 20px 0;
+  }
+
+  .carrusel-circular {
+    width: 250px;
+    height: 250px;
+  }
+
+  .carrusel img {
+    width: 120px;
+    height: 80px;
+    left: 65px;
+    top: 85px;
   }
 }
 
 @media (min-width: 769px) {
   .desktop-header {
     display: flex !important;
+  }
+}
+
+@keyframes girar {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
   }
 }
 
