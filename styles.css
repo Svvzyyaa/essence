@@ -205,12 +205,14 @@ form input[type="submit"]:hover {
 
 .brand-name {
   font-size: 2rem;
+  font-family: var(--font-title);
   font-weight: bold;
   margin-left: 1rem;
 }
 
 @media (max-width: 768px) {
   .brand-name {
+    font-family: var(--font-title);
     font-size: 1.5rem;
   }
 }
@@ -238,9 +240,7 @@ main, h2, ul, blockquote, form {
 
 .desktop-menu {
   display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 1rem;
+  gap: 20px;
 }
 
 .mobile-header {
@@ -251,13 +251,21 @@ main, h2, ul, blockquote, form {
   .desktop-menu {
     display: none;
   }
-
+ 
   .mobile-header {
     display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
   }
-
+  
+  .mobile-header .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
   .mobile-menu {
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 0.5rem;
     background-color: #fff;
@@ -304,12 +312,6 @@ main, h2, ul, blockquote, form {
     height: 80px;
     left: 65px;
     top: 85px;
-  }
-}
-
-@media (min-width: 769px) {
-  .desktop-header {
-    display: flex !important;
   }
 }
 
