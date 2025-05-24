@@ -9,14 +9,14 @@
   --color-dark: #000000;
 }
 
-.body {
+body {
   margin: 0;
   background-color: var(--color-light);
   font-family: var(--font-body);
   color: var(--color-text);
 }
 
-.header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,18 +24,18 @@
   border-bottom: 1px solid #eee;
 }
 
-.header h1 {
+header h1 {
   font-family: var(--font-title);
   font-size: 2em;
   letter-spacing: 2px;
 }
 
-.nav {
+nav {
   display: flex;
   gap: 20px;
 }
 
-.nav a {
+nav a {
   text-decoration: none;
   color: var(--color-text);
   font-weight: 400;
